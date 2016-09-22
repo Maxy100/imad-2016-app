@@ -2,20 +2,35 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
+
+
+
+
+
+
+
+
+
+
+
+
 var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-hi all  my nam eis maxy thish is my 1st webapp 
+});opp.get  ('/artical-one function(requested(re send (artical one requested and will be served here
+
+)
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
+}); ('/aritical-two  fuction (requested)(resend (artical two requested and will be served heare
+fuction (requested)(resend (articalone requested and will be served heare
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-});
+});opp.get ('/artical-three function (requested (re send (artical three requuseted and will be served here 
+'
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
